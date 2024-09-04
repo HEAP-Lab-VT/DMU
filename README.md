@@ -2,7 +2,7 @@
 Direct Machine-physical Memory Allocation (DMU) restores precise memory allocation in a system with hardware memory compression.
 
 ## Video Demo (on YouTube)
-[![Watch the video](https://img.youtube.com/vi/bZsBcsEZNyo/hqdefault.jpg)](https://youtu.be/bZsBcsEZNyo)
+[![Watch the video](https://img.youtube.com/vi/-1JG3JnIY3U/hqdefault.jpg)](https://youtu.be/-1JG3JnIY3U)
 
 ## File Description
 1. **FPGA_Bitstream.bit**: RTL implementation of DMU. This file will be uploaded to the FPGA board.
