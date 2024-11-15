@@ -136,4 +136,4 @@ Please wait for the “hog” program to finish initializing its memory values; 
 ```
 $ grep -E "MemTotal|MemFree|SwapTotal|SwapFree" /proc/meminfo
 ```
-YouTube minute-mark link for reference: https://youtu.be/GyCOF7MZk-U?si=ZglOqBdp3jOdQPqh&t=238
+YouTube minute-mark link for reference: https://youtu.be/GyCOF7MZk-U?t=238
