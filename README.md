@@ -86,13 +86,13 @@ $ ./MachinePhysMemMgr --total-allocation-obj 70 --run-with-CCB 1 ./mcf_1 inp.in 
 $ ./MachinePhysMemMgr --total-allocation-obj 100 --run-with-CCB 2 ./mcf_2 inp.in > out.mcf2
 $ ./MachinePhysMemMgr --total-allocation-obj 155 --run-with-CCB 3 ./mcf_3 inp.in > out.mcf3
 ```
-YouTube minute-mark link for reference: https://youtu.be/GyCOF7MZk-U?si=9lJ_u7iqpJFsSoea&t=57 
+YouTube minute-mark link for reference: https://youtu.be/GyCOF7MZk-U?t=57 
 
 Query which programs are running under which CCBs
 ```
 $ ./MachinePhysMemMgr --print-state
 ```
-YouTube minute-mark link for reference: https://youtu.be/GyCOF7MZk-U?si=zFCnHVGvsl1vWJpz&t=77 
+YouTube minute-mark link for reference: https://youtu.be/GyCOF7MZk-U?t=77 
 
 2. Under DMU, a workload only gets compressed when it can no longer fit inside its specified machine-physical memory as plaintext
 **After 10 minutes**, query how much physical memory is allocated to each program.
@@ -102,7 +102,7 @@ $ cat /proc/`pidof mcf_2`/status | grep -E 'State|VmRSS|VmSwap'
 $ cat /proc/`pidof mcf_3`/status | grep -E 'State|VmRSS|VmSwap'
 $ ./MachinePhysMemMgr --print-state
 ```
-YouTube minute-mark link for reference: https://youtu.be/GyCOF7MZk-U?si=Ipc_0XOoxdYwRmiV&t=82 
+YouTube minute-mark link for reference: https://youtu.be/GyCOF7MZk-U?t=82 
 
 
 3. Under DMU, when a workload can no longer be further compressed, the system gracefully swaps out memory values only of that workload
@@ -116,7 +116,7 @@ $ cat /proc/`pidof mcf_2`/status | grep -E 'State|VmRSS|VmSwap'
 $ cat /proc/`pidof mcf_3`/status | grep -E 'State|VmRSS|VmSwap'
 $ ./MachinePhysMemMgr --print-state
 ```
-YouTube minute-mark link for reference: https://youtu.be/GyCOF7MZk-U?si=DIFzcnL0LrCjkpd0&t=120 
+YouTube minute-mark link for reference: https://youtu.be/GyCOF7MZk-U?t=120
 
 4. Under DMU, all workloads' combined resident set size (RSS) is much more (i.e., up to 4X more) than the amount of DRAM installed on the FPGA board.
     
@@ -130,7 +130,7 @@ $ ./MachinePhysMemMgr --CCB 1 --update-total-allocation-obj 500
 $ ./MachinePhysMemMgr --run-with-CCB 1 ./hog --size-in-MB 3072
 $ ./MachinePhysMemMgr --print-state
 ```
-YouTube minute-mark link for reference: https://youtu.be/GyCOF7MZk-U?si=YmcWwelrfvs-Ur7_&t=185 
+YouTube minute-mark link for reference: https://youtu.be/GyCOF7MZk-U?t=185 
 
 Please wait for the “hog” program to finish initializing its memory values; this usually takes 10 minutes.
 ```
